@@ -39,7 +39,6 @@ class PicturesController < ApplicationController
     @picture.artist = params[:picture][:artist]
     @picture.url = params[:picture][:url]
 
-
     if @picture.save
       redirect_to "/pictures/#{@picture.id}"
     else
@@ -51,6 +50,6 @@ class PicturesController < ApplicationController
     @picture = Picture.find(params[:id])
     @picture.destroy
     redirect_to "/pictures"
-  end  
+  end
 
 end
