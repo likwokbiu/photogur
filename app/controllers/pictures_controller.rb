@@ -1,7 +1,8 @@
 class PicturesController < ApplicationController
 
   def index
-    @pictures = Picture.all
+    # @pictures = Picture.all
+    @pictures = Picture.created_before30d
   end
 
   def show
