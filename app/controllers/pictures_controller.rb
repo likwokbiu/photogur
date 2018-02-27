@@ -1,10 +1,10 @@
 class PicturesController < ApplicationController
 
   def index
-    # @pictures = Picture.all
+    @pictures = Picture.all
     # @pictures = Picture.created_before30d
-    @year = 2017
-    @pictures = Picture.created_in_year(@year)
+    # @year = 2017
+    # @pictures = Picture.created_in_year(@year)
   end
 
   def show
