@@ -1,4 +1,6 @@
 class Picture < ApplicationRecord
+  belongs_to :user
+
   DAYS_30 = 30 * (24 * 60 * 60)
 
   validates :artist, presence: true
